@@ -332,8 +332,6 @@
   position: sticky;
   top: 0;
   background: #ffffff;
-  display: flex;
-  justify-content: space-between;
 }
 
 .copy-btn {

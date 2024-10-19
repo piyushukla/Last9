@@ -7,8 +7,8 @@ import AlterList from './component'
 function App() {
   return (
     <div className='container'>
-        <div className='header'>
-          <div className='container-main nav-section'>
+        <div className='header nav-section'>
+          <div className='container-main' style={{display:'flex',justifyContent:'space-between'}}>
                  <img src={alert} />
                  <img  src={git}/>
           </div>
