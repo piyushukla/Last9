@@ -43,6 +43,8 @@
   height: 100%;
   justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-main {
@@ -206,9 +208,8 @@
 
 .modal-content {
   background-color: white;
-  padding: 20px;
   border-radius: 10px;
-  width: 600px;
+  width: 650px;
   max-height: 80%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -230,17 +231,22 @@
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   width: 500px;
+  position: relative;
 }
 
 
 .modal-title {
   color: #475569;
   font-family: 'Inter', sans-serif;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: -0.18000000715255737px;
-text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.18000000715255737px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
 }
 
@@ -248,19 +254,20 @@ text-align: left;
 
   color: #475569;
   font-family: 'Inter', sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 20px;
-text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
 
 }
+
 .alert-type {
   color: #22863A;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0.009999999776482582px;
-text-align: left;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.009999999776482582px;
+  text-align: left;
 
 }
 
@@ -268,17 +275,24 @@ text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  position: sticky; /* or position: fixed if you prefer */
+  position: sticky;
+  /* or position: fixed if you prefer */
   top: 0;
-  background-color: white; /* Ensure the background is visible */
-  z-index: 1; /* Ensure it stays above the scrollable content */
-  padding: 10px; /* Add padding if needed */
+  background-color: white;
+  /* Ensure the background is visible */
+  z-index: 1;
+  /* Ensure it stays above the scrollable content */
+  padding: 20px;
+  /* Add padding if needed */
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 0px;
 }
 
 .modal-content {
-  max-height: 80vh; /* Adjust this as needed to limit the modal height */
-  overflow-y: auto; /* Enable vertical scrolling for the content */
-  padding: 20px;
+  max-height: 80vh;
+  /* Adjust this as needed to limit the modal height */
+  overflow-y: auto;
+  /* Enable vertical scrolling for the content */
 }
 
 .alert-number {
@@ -300,4 +314,31 @@ text-align: left;
 
   display: flex;
   gap: 10px;
+}
+
+.header {
+  border-bottom: 1px solid #E2E8F0;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.alert-list {
+  padding: 20px;
+}
+
+.nav-section {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
 }
